@@ -4,7 +4,6 @@ slices:
   bins:
     essential:
       - libc6_libs
-      - libunwind8_libs
     contents:
       /usr/bin/strace:
       /usr/bin/strace-log-merge:
