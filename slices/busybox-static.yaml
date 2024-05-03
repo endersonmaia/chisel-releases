@@ -1,0 +1,6 @@
+package: busybox-static
+
+slices:
+  bins:
+    contents:
+      /usr/bin/busybox:
