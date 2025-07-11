@@ -1,0 +1,17 @@
+package: python3-yaml
+
+essential:
+  - python3-yaml_copyright
+
+slices:
+  libs:
+    essential:
+      - python3_core
+      - libc6_libs
+      - libyaml-0-2_libs
+    contents:
+      /usr/lib/python3/dist-packages/yaml/*.py:
+
+  copyright:
+    contents:
+      /usr/share/doc/python3-yaml/copyright:
