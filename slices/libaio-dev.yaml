@@ -1,0 +1,21 @@
+package: libaio-dev
+
+essential:
+  - libaio-dev_copyright
+
+slices:
+  libs:
+    essential:
+      - libaio1t64_libs
+    contents:
+      /usr/include/libaio.h:
+      /usr/lib/*-linux-*/libaio.a:
+      /usr/lib/*-linux-*/libaio.so:
+
+  headers:
+    contents:
+      /usr/include/libaio.h:
+
+  copyright:
+    contents:
+      /usr/share/doc/libaio-dev/copyright:

@@ -1,0 +1,11 @@
+summary: Integration tests for libaio-dev
+
+execute: |
+  rootfs="$(install-slices libaio-dev_libs libaio-dev_headers)"
+
+  apt install -y gcc
+  arch=$(gcc -dumpmachine)
+
+  test -f ${rootfs}/usr/include/libaio.h
+  test -f ${rootfs}/usr/lib/${arch}/libaio.a
+  test -f ${rootfs}/usr/lib/${arch}/libaio.so
